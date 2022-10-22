@@ -17,14 +17,6 @@ body {
   text-decoration: none;
 }
 
-.current{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-color: #2196F3;
-}
-
 /*BODY*/
 /*HEADER*/
 
@@ -107,6 +99,7 @@ color: #2196F3;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
+  font-family: inherit;
   line-height: calc(30 / 16);
   /* identical to box height, or 188% */
   display: flex;
@@ -117,6 +110,20 @@ color: #2196F3;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .specifics-list {
@@ -320,3 +327,8 @@ color: #757575;
 .portfolio-example{
   text-decoration: none;
 }
+
+
+.current{
+  color: #2196F3;
+  }
